@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url("static/review1.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 130%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <h2 style="background-color:aliceblue">Analysis of review for mango-juice</h2>
+
+        {% if chart %}
+        <img src="data:image/png;base64, {{chart|safe}}">
+        {% endif %}
+        {% if abc %}
+        <img src="data:image/png;base64, {{abc|safe}}">
+        {% endif %}
+        {% if pie %}
+        <img src="data:image/png;base64, {{pie|safe}}">
+        {% endif %}
+    </center>
+</body>
+
+</html>

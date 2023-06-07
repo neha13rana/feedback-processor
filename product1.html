@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback form</title>
+
+  <style>
+    body,html{
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image {
+
+      background-image: url("/static/feedback.jpg");
+
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+    }
+
+    .bg-text {
+      background-color: rgb(255, 255, 255);
+      background-color: rgba(125, 125, 125, 0.5);
+      color: white;
+      font-weight: bold;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body background="/static/feedback.jpg"
+  style=" height: 100%; background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+  <div class="bg-image"></div>
+
+  <div class="bg-text">
+    <form method="post">
+      {% csrf_token %}
+      <p>Dear Customer,<br>
+        Thank you for purchasing our {{ pname }}</p>
+
+      <p>Please rate your experience for the following parameters</p>
+      <br><br>
+
+      <label style="font-size: larger;">Taste</label><br>
+
+      <span class="star-rating">
+        <input type="radio" name="taste" value="5">Very nice
+        <input type="radio" name="taste" value="4">Nice
+        <input type="radio" name="taste" value="3">Good
+        <input type="radio" name="taste" value="2">Average
+        <input type="radio" name="taste" value="1">Worst
+      </span>
+
+      <br>
+      <br>
+
+      <label style="font-size: larger;">Freshness</label><br>
+      <span class="star-rating">
+        <input type="radio" name="freshness" value="5">Very nice
+        <input type="radio" name="freshness" value="4">Nice
+        <input type="radio" name="freshness" value="3">Good
+        <input type="radio" name="freshness" value="2">Average
+        <input type="radio" name="freshness" value="1">Worst
+      </span>
+      <br>
+      <br>
+      <label style="font-size: larger;">Counts of healthyness</label><br>
+      <span class="star-rating">
+        <input type="radio" name="h_cnt" value="5">Very nice
+        <input type="radio" name="h_cnt" value="4">Nice
+        <input type="radio" name="h_cnt" value="3">Good
+        <input type="radio" name="h_cnt" value="2">Average
+        <input type="radio" name="h_cnt" value="1">Worst
+      </span>
+      <br>
+      <br>
+      <label style="font-size: larger;">Flavour and texture </label><br>
+      <span class="star-rating">
+        <input type="radio" name="flv" value="5">Very nice
+        <input type="radio" name="flv" value="4">Nice
+        <input type="radio" name="flv" value="3">Good
+        <input type="radio" name="flv" value="2">Average
+        <input type="radio" name="flv" value="1">Worst
+      </span>
+      <br>
+      <br>
+      <label style="font-size: larger;"> Delivery services </label><br>
+      <span class="star-rating">
+        <input type="radio" name="delivery" value="5">Very nice
+        <input type="radio" name="delivery" value="4">Nice
+        <input type="radio" name="delivery" value="3">Good
+        <input type="radio" name="delivery" value="2">Average
+        <input type="radio" name="delivery" value="1">Worst
+      </span>
+      <br>
+      <br>
+      <br>
+      <br>
+      <button type="submit" style="height :30px;width :15%;background:#43a7d5;   ;"> Submit your review </button>
+
+    </form>
+
+  </div>
+
+
+</body>
+
+</html>

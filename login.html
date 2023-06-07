@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pulpy juices</title>
+
+    <style>
+
+      body{
+        background-image: url("static/juice.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 130%;
+      }
+        
+      .login{
+            margin:12%;    
+       }
+
+       .login h1{
+        color:burlywood;
+       }
+
+       .login h2{
+        color:cornsilk;
+       }
+
+        button[type=submit] {
+            background-color:blanchedalmond;
+            color:black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <center>
+    <form method="post" action="/login">
+        {% csrf_token %}
+    <div class="login">
+
+    <h1>Pulpy juices</h1>
+    <h2>Please Sign-in</h2>
+
+    <input type="text" name="username"  style="height :30px;width :25%  ;"  required>
+    <br><br>
+    <input type="password" name="pass" style="height :30px;width :25%   ;"  required>
+    <br><br>
+   <button type="submit" style="height :30px;width :15%   ;" > Login </button> 
+</center>
+
+</div>
+</form>
+   
+</body>
+</html>
