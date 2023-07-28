@@ -9,15 +9,17 @@ This is the *Login page* of the website. Once the user enters the correct creden
 
 `
 
-![pro1](https://github.com/neha13rana/feedback-processor/assets/121093178/166856f3-169e-4d99-9ba6-d2593d626b5a)
+![p1](https://github.com/neha13rana/feedback-processor/assets/121093178/69922114-4d54-4b63-ae1c-dd92d69475ee)
+
 
 This is the *Home Page. It shows all the products of the company. If the **user is client, then on clicking on the product button he/she will be directed to the **feedback page; and if the **user is Manager* then he/she will be directed to the *analysis page. At last, there is also an option to **logout*.  
 
 `
-![pro3](https://github.com/neha13rana/feedback-processor/assets/121093178/55cb0084-252f-44d9-92b3-e60bc23415ca)
+![p2](https://github.com/neha13rana/feedback-processor/assets/121093178/04aedfd0-201d-4a46-9776-2ea0f40cb630)
+![p3](https://github.com/neha13rana/feedback-processor/assets/121093178/2870ab70-b82f-4d84-8bdc-71e45ef9a690)
+![p4](https://github.com/neha13rana/feedback-processor/assets/121093178/b031d943-e93b-4390-9db4-fd4df518fdfb)
+![p5](https://github.com/neha13rana/feedback-processor/assets/121093178/1397757d-b697-4f94-b1e9-7155bf019984)
 
-![pro5](https://github.com/neha13rana/feedback-processor/assets/121093178/75cfd542-f00e-4311-b42e-a135486a4a22)
-![pro4](https://github.com/neha13rana/feedback-processor/assets/121093178/715ec17e-7992-448c-bfbb-7d244e36c0ca)
 
 This is the *Feedback Page*. It collects the feedback from customers, map it on the scale of 1-5 and sotre it on the database for analysis purpose. If a user has already provided the feedback for the product then he/she will not be allowed to give the feedback again. 
 
